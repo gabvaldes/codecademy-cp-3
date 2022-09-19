@@ -1,0 +1,227 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --pink: #cb58a7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Logo */
+
+.logo {
+  margin-left: 20px;
+}
+
+.logo h1 a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.logo h1 a:hover {
+  color: var(--pink);
+}
+
+/* Navigation */
+
+.nav li {
+  display: inline-flex;
+  margin: 0 20px 0 20px;
+}
+
+.nav li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: var(--pink);
+}
+
+/* Our Mission */
+
+.mission {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  top: 50px;
+}
+
+.mission::before {
+  content: "";
+  background-image: url("banner.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.50;
+}
+
+.mission .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.content h1 {
+  position: relative;
+  padding: 10px 0 10px 0;
+  color: var(--black);
+}
+
+.content p {
+  position: relative;
+  padding: 10px 0 10px 0;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.mission-button {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 12px 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mission-button:hover {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+  padding: 12px 12px;
+  cursor: pointer;
+}
+
+/* Our Products */
+
+.products-container {
+  position: relative;
+  top: 50px;
+  height: auto;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.products-title {
+  text-align: center;
+}
+
+.products-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.products-item {
+  padding: 10px 10px;
+}
+
+.products-item a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.products-item a:hover {
+  color: var(--pink);
+}
+
+img {
+  height: 200px;
+  position: top;
+  border-radius: 5px;
+}
+
+.weebs {
+  position: relative;
+  top: 50px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.weebs-container {
+  height: auto;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.weebs-title {
+  text-align: center;
+}
+
+.weebs-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.weebs-item {
+  padding: 10px 10px;
+}
+
+.weebs-item h2 {
+  margin-top: 10px;
+}
+
+footer {
+  position: relative;
+  top: 50px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 12px;
+}
